@@ -107,7 +107,7 @@
     background-image: radial-gradient(circle,rgba(255,0,0,0.5),rgb(124, 18, 18,0.35),rgba(0,0,0.2));
 }
 .content h2 {
-    width: 150%;
+    width: 100%;
     margin: 10px auto 80px;
     font-weight: bold;
     font-size:xx-large;
