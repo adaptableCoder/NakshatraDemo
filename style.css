@@ -211,6 +211,16 @@ footer {
     margin-left: 20px;
 }
 
+.col-2 a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.col-2 a:hover {
+    color: red;
+    cursor: pointer;
+}
 .col-2 {
     flex-grow: 1;
     text-align: center;
