@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+#slideImg {
+    width: 100%;
+    height: 100%;
+    animation: zoom 5s ease-in-out infinite;
+}
+
+@keyframes zoom{
+    0% {
+        transform: scale(1.2);
+    }
+    15% {
+        transform: scale(1.1);
+    }
+    65% {
+        transform: rotate(-1deg)
+    }
+    100% {
+        transform: scale(1.2)
+    }
+}
+
+.overlay {
+    width:100%;
+    height: 170vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    position: absolute;
+    top: 0;
+}
+.navbar {
+    position: fixed;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 35px 30px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.logo {
+    flex-basis: 15%;
+    position: sticky;
+   
+}
+.logo img{
+    width: 100px;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 100%;
+    margin-left: 30px;
+    box-shadow: rgb(0, 217, 255) 2px 2px;
+}
+
+.menu-icons {
+    flex: 1;
+    align-items: center;
+    text-align: right; 
+    margin: 20px;
+    text-shadow: black 2px 2px;
+}
+.menu-icons a {
+    margin-left: 30px; cursor: pointer;
+    text-decoration: wavy;
+    color: white;
+    font-family: 'text me one';
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.menu-icons a:hover {
+    color: red;
+}
+
+.content {
+    width: 60%;
+    margin: 150px auto 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Text Me One';
+}
+.content h1 {
+    font-size: 100px;
+}
+.content h3 {
+    width: 100%;
+    margin: 10px auto 80px;
+    font-weight: bold;
+    line-height: 45px;
+    background-image: radial-gradient(circle,rgba(255,0,0,0.5),rgb(124, 18, 18,0.35),rgba(0,0,0.2));
+}
+.content h2 {
+    width: 100%;
+    margin: 10px auto 80px;
+    font-weight: bold;
+    font-size:xx-large;
+    line-height: 55px;
+    background-image: radial-gradient(circle,rgba(21, 255, 0, 0.5),rgba(18, 124, 32, 0.35),rgba(0,0,0.2));
+}
+
+/*for image gallery*/
+/* Slideshow container */
+.gallery-details {
+    color:white;
+    text-align: center;
+    position: relative;
+    top:390px;
+    z-index: 5;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+.img-gallery {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    top: 700px;
+    align-items: center;
+    align-self: center;
+}
+
+.img-gallery img{
+    width:50%;
+    display: none;
+    margin:auto;
+    box-shadow: greenyellow 2px 2px;
+    border-radius: 30px;
+}
+
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+button {
+    position: absolute;
+    top: 900px;
+    transform: translateY(-50%);
+    font-size: 28px;
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid red;
+    background: red;
+    color: white;
+    cursor: pointer;   
+    transition: background 0.6s;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.prev {
+    left: 0;
+}
+.next {
+    right:0;
+}
+
+/* Slides */
+.myDetails {
+    display: none;
+    padding: 10px;
+    text-align: center;
+}
+.myDetails h1 {
+    font-family: 'text me one';
+}
+.myDetails p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    position: relative;
+    margin-top: 100px;
+    width: 90%;
+    padding: 50px 5%;
+    background: black;
+    color: white;
+    display: flex; /*make columns appear side by side*/
+    font-family: 'Text Me One';
+    bottom: -710px;
+
+}
+
+.col-1 {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.col-2 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: larger;
+    margin-left: 40px;
+}
+
+.col-3 {
+    text-align: center;
+}
+
+.footer h3 {
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+    margin: 5px;
+
+}

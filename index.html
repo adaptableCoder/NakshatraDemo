@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NAKSHATRA - Astronomy & Mathematics Society</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="slider()">
+
+        <div class="banner">
+            <div class="slider">
+                <img src="./space1.jpg" id="slideImg">
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./logo.jpg" onclick="document.location='./index.html'" title="Nakshatra HomePage">
+                </div>
+                <div class="menu-icons">
+                   <a>Departments</a>
+                   <a>Past Events</a>
+                   <a>Alumini</a>
+                   <a>About</a>
+                </div>
+            </div>
+
+            <div class="content">
+                <img src="./NakshatraMain.png">
+                <h1>NAKSHATRA</h1>
+                <h3>"Astronomy is the language that translates the whispers of the cosmos"</h3>
+                <h2>Photo Gallery</h2>
+            </div>
+
+            <div class="gallery-details">
+                <div class="myDetails">
+                  <h1>Orientation 2024 Freshers</h1>
+                  <p class="det"></p>
+                </div>
+              
+                <div class="myDetails">
+                  <h1>National Space Day</h1>
+                  <p class="det"></p>
+                </div>
+              
+                <div class="myDetails">
+                  <h1>Puzzle Prodigy</h1>
+                  <p class="det"></p>
+                </div>
+
+                <div class="myDetails">
+                    <h1>Interstellar paparazzi</h1>
+                    <p class="det"></p>
+                </div>
+
+                <div class="myDetails">
+                    <h1>Space Shooting Arena</h1>
+                    <p class="det"></p>
+                </div>
+
+                <div class="myDetails">
+                    <h1>Hack the Constellation</h1>
+                    <p class="det"></p>
+                </div>
+
+                <div class="myDetails">
+                    <h1>Nehru Planetarium Visit</h1>
+                    <p class="det"></p>
+                </div>
+              
+                <!-- Next/prev buttons - same as for cari imgs-->
+              </div>
+            </div>
+
+            <div class="img-gallery">
+                <div class="slides">
+                    <img class="slide" src="./gallery/event1.png">
+                    <img class="slide" src="./gallery/event2.png">
+                    <img class="slide" src="./gallery/event3.png">
+                    <img class="slide" src="./gallery/event4.png">
+                    <img class="slide" src="./gallery/event5.png">
+                    <img class="slide" src="./gallery/event6.png">
+                    <img class="slide" src="./gallery/event7.png">
+                </div>
+            </div>
+
+            <button class="prev" onclick="prevSlide()" title="Previous CARI">&#10094</button>
+            <button class="next" onclick="nextSlide()" title="Next CARI">&#10095</button>
+
+            <footer>
+                <div class="col-1">
+                    <h3>SOCIAL</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Nakshatra.DU/"><img src="./facebook.png"></a>
+                        <a href="https://instagram.com/nakshatra_nsut?igshid=5qzqv4howx7u"><img src="./instagram.png"></a>
+                        <a href="https://t.me/nakshatransut"><img src="./telegram.png"></a>
+                        <a href="https://www.linkedin.com/company/nakshatra-nsut/"><img src="./linkedin.png"></a>
+                        <a href="https://linktr.ee/NakshatraNSUT"><img src="./linktree.png"></a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <p>Made with ♥<br>by <br> Atharv Mehrotra <br> for <br>Nakshatra</p>
+                </div>
+
+                <div class="col-3">
+                    <h3>CONTACT</h3>
+                    <p>Netaji Subhash University of Technology,<br> New Delhi 110078</p>
+                </div>
+            </footer>  
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
