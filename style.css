@@ -200,6 +200,7 @@ button:hover {
 }
 
 footer {
+    position: relative;
     margin-top: 100px;
     width: 90%;
     padding: 50px 5%;
@@ -207,6 +208,7 @@ footer {
     color: white;
     display: flex; /*make columns appear side by side*/
     font-family: 'Text Me One';
+    bottom: -710px;
 
 }
 
